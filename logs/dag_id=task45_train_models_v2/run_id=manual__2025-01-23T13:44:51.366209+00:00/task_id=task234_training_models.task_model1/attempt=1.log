@@ -1,0 +1,16 @@
+[2025-01-23T13:45:06.157+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: task45_train_models_v2.task234_training_models.task_model1 manual__2025-01-23T13:44:51.366209+00:00 [queued]>
+[2025-01-23T13:45:06.224+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: task45_train_models_v2.task234_training_models.task_model1 manual__2025-01-23T13:44:51.366209+00:00 [queued]>
+[2025-01-23T13:45:06.248+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-01-23T13:45:06.426+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task234_training_models.task_model1> on 2025-01-23 13:44:51.366209+00:00
+[2025-01-23T13:45:06.533+0000] {standard_task_runner.py:60} INFO - Started process 8511 to run task
+[2025-01-23T13:45:06.586+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'task45_train_models_v2', 'task234_training_models.task_model1', 'manual__2025-01-23T13:44:51.366209+00:00', '--job-id', '138', '--raw', '--subdir', 'DAGS_FOLDER/task45_train_models_v2.py', '--cfg-path', '/tmp/tmp_bckp1kq']
+[2025-01-23T13:45:06.591+0000] {standard_task_runner.py:88} INFO - Job 138: Subtask task234_training_models.task_model1
+[2025-01-23T13:45:06.655+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-01-23T13:45:06.848+0000] {task_command.py:423} INFO - Running <TaskInstance: task45_train_models_v2.task234_training_models.task_model1 manual__2025-01-23T13:44:51.366209+00:00 [running]> on host a8cdec4ae828
+[2025-01-23T13:45:07.431+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='task45_train_models_v2' AIRFLOW_CTX_TASK_ID='task234_training_models.task_model1' AIRFLOW_CTX_EXECUTION_DATE='2025-01-23T13:44:51.366209+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-23T13:44:51.366209+00:00'
+[2025-01-23T13:45:07.962+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-01-23T13:45:08.012+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=task45_train_models_v2, task_id=task234_training_models.task_model1, execution_date=20250123T134451, start_date=20250123T134506, end_date=20250123T134508
+[2025-01-23T13:45:08.170+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-01-23T13:45:08.324+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

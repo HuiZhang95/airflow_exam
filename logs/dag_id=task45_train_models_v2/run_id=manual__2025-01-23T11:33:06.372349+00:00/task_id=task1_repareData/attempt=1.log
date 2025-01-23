@@ -1,0 +1,237 @@
+[2025-01-23T11:33:11.037+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: task45_train_models_v2.task1_repareData manual__2025-01-23T11:33:06.372349+00:00 [queued]>
+[2025-01-23T11:33:11.053+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: task45_train_models_v2.task1_repareData manual__2025-01-23T11:33:06.372349+00:00 [queued]>
+[2025-01-23T11:33:11.054+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-01-23T11:33:11.086+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task1_repareData> on 2025-01-23 11:33:06.372349+00:00
+[2025-01-23T11:33:11.103+0000] {standard_task_runner.py:60} INFO - Started process 4038 to run task
+[2025-01-23T11:33:11.112+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'task45_train_models_v2', 'task1_repareData', 'manual__2025-01-23T11:33:06.372349+00:00', '--job-id', '68', '--raw', '--subdir', 'DAGS_FOLDER/task45_train_models_v2.py', '--cfg-path', '/tmp/tmpt01ha5s2']
+[2025-01-23T11:33:11.118+0000] {standard_task_runner.py:88} INFO - Job 68: Subtask task1_repareData
+[2025-01-23T11:33:11.138+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-01-23T11:33:11.217+0000] {task_command.py:423} INFO - Running <TaskInstance: task45_train_models_v2.task1_repareData manual__2025-01-23T11:33:06.372349+00:00 [running]> on host a8cdec4ae828
+[2025-01-23T11:33:11.371+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='task45_train_models_v2' AIRFLOW_CTX_TASK_ID='task1_repareData' AIRFLOW_CTX_EXECUTION_DATE='2025-01-23T11:33:06.372349+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-23T11:33:06.372349+00:00'
+[2025-01-23T11:33:11.394+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'target'] = df_temp['temperature'].shift(1)
+
+[2025-01-23T11:33:11.396+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.398+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.400+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.402+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.405+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.407+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.409+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.411+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.412+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.418+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'target'] = df_temp['temperature'].shift(1)
+
+[2025-01-23T11:33:11.420+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.422+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.423+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.425+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.427+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.428+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.430+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.432+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.434+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.439+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:40: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'target'] = df_temp['temperature'].shift(1)
+
+[2025-01-23T11:33:11.441+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.443+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.445+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.447+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.449+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.450+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.452+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.454+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.456+0000] {warnings.py:109} WARNING - /opt/***/dags/task45_train_models_v2.py:44: SettingWithCopyWarning: 
+A value is trying to be set on a copy of a slice from a DataFrame.
+Try using .loc[row_indexer,col_indexer] = value instead
+
+See the caveats in the documentation: https://pandas.pydata.org/pandas-docs/stable/user_guide/indexing.html#returning-a-view-versus-a-copy
+  df_temp.loc[:, 'temp_m-{}'.format(i)
+
+[2025-01-23T11:33:11.470+0000] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+  File "/home/airflow/.local/lib/python3.8/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+  File "/opt/airflow/dags/task45_train_models_v2.py", line 70, in prepare_data
+    value={
+TypeError: unhashable type: 'DataFrame'
+[2025-01-23T11:33:11.486+0000] {taskinstance.py:1138} INFO - Marking task as FAILED. dag_id=task45_train_models_v2, task_id=task1_repareData, execution_date=20250123T113306, start_date=20250123T113311, end_date=20250123T113311
+[2025-01-23T11:33:11.511+0000] {standard_task_runner.py:107} ERROR - Failed to execute job 68 for task task1_repareData (unhashable type: 'DataFrame'; 4038)
+[2025-01-23T11:33:11.535+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-01-23T11:33:11.585+0000] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

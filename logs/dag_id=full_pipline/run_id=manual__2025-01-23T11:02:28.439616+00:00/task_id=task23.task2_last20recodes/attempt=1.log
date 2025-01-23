@@ -1,0 +1,27 @@
+[2025-01-23T11:02:42.293+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: full_pipline.task23.task2_last20recodes manual__2025-01-23T11:02:28.439616+00:00 [queued]>
+[2025-01-23T11:02:42.339+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: full_pipline.task23.task2_last20recodes manual__2025-01-23T11:02:28.439616+00:00 [queued]>
+[2025-01-23T11:02:42.340+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-01-23T11:02:42.390+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task23.task2_last20recodes> on 2025-01-23 11:02:28.439616+00:00
+[2025-01-23T11:02:42.402+0000] {standard_task_runner.py:60} INFO - Started process 3051 to run task
+[2025-01-23T11:02:42.415+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'full_pipline', 'task23.task2_last20recodes', 'manual__2025-01-23T11:02:28.439616+00:00', '--job-id', '60', '--raw', '--subdir', 'DAGS_FOLDER/allTasks_taskgroup.py', '--cfg-path', '/tmp/tmpvcdo6kz4']
+[2025-01-23T11:02:42.422+0000] {standard_task_runner.py:88} INFO - Job 60: Subtask task23.task2_last20recodes
+[2025-01-23T11:02:42.463+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-01-23T11:02:42.560+0000] {task_command.py:423} INFO - Running <TaskInstance: full_pipline.task23.task2_last20recodes manual__2025-01-23T11:02:28.439616+00:00 [running]> on host a8cdec4ae828
+[2025-01-23T11:02:42.782+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='full_pipline' AIRFLOW_CTX_TASK_ID='task23.task2_last20recodes' AIRFLOW_CTX_EXECUTION_DATE='2025-01-23T11:02:28.439616+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-23T11:02:28.439616+00:00'
+[2025-01-23T11:02:42.827+0000] {logging_mixin.py:188} INFO -     temperature        city  pression              date
+0       280.04       Paris      1013  23-01-2025 11:02
+1       279.92      London      1002  23-01-2025 11:02
+2       267.85  Washington      1042  23-01-2025 11:02
+3       280.04       Paris      1013  23-01-2025 10:52
+4       279.64      London      1002  23-01-2025 10:52
+5       267.85  Washington      1042  23-01-2025 10:52
+6       278.29       Paris      1012  23-01-2025 09:44
+7       278.62      London      1003  23-01-2025 09:44
+8       267.81  Washington      1042  23-01-2025 09:44
+9       278.24       Paris      1012  23-01-2025 09:43
+[2025-01-23T11:02:42.838+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-01-23T11:02:42.873+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=full_pipline, task_id=task23.task2_last20recodes, execution_date=20250123T110228, start_date=20250123T110242, end_date=20250123T110242
+[2025-01-23T11:02:42.943+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-01-23T11:02:43.003+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

@@ -1,0 +1,18 @@
+[2025-01-23T13:59:34.632+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: task45_train_models_v2.task5_selectBestModel manual__2025-01-23T13:59:12.301899+00:00 [queued]>
+[2025-01-23T13:59:34.654+0000] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: task45_train_models_v2.task5_selectBestModel manual__2025-01-23T13:59:12.301899+00:00 [queued]>
+[2025-01-23T13:59:34.655+0000] {taskinstance.py:2170} INFO - Starting attempt 1 of 1
+[2025-01-23T13:59:34.685+0000] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): task5_selectBestModel> on 2025-01-23 13:59:12.301899+00:00
+[2025-01-23T13:59:34.701+0000] {standard_task_runner.py:60} INFO - Started process 9062 to run task
+[2025-01-23T13:59:34.705+0000] {standard_task_runner.py:87} INFO - Running: ['***', 'tasks', 'run', 'task45_train_models_v2', 'task5_selectBestModel', 'manual__2025-01-23T13:59:12.301899+00:00', '--job-id', '164', '--raw', '--subdir', 'DAGS_FOLDER/task45_train_models_v2.py', '--cfg-path', '/tmp/tmpxys3p9z_']
+[2025-01-23T13:59:34.714+0000] {standard_task_runner.py:88} INFO - Job 164: Subtask task5_selectBestModel
+[2025-01-23T13:59:34.748+0000] {warnings.py:109} WARNING - /home/***/.local/lib/python3.8/site-packages/***/settings.py:194: DeprecationWarning: The sql_alchemy_conn option in [core] has been moved to the sql_alchemy_conn option in [database] - the old setting has been used, but please update your config.
+  SQL_ALCHEMY_CONN = conf.get("database", "SQL_ALCHEMY_CONN")
+
+[2025-01-23T13:59:34.830+0000] {task_command.py:423} INFO - Running <TaskInstance: task45_train_models_v2.task5_selectBestModel manual__2025-01-23T13:59:12.301899+00:00 [running]> on host a8cdec4ae828
+[2025-01-23T13:59:35.115+0000] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='***' AIRFLOW_CTX_DAG_ID='task45_train_models_v2' AIRFLOW_CTX_TASK_ID='task5_selectBestModel' AIRFLOW_CTX_EXECUTION_DATE='2025-01-23T13:59:12.301899+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-01-23T13:59:12.301899+00:00'
+[2025-01-23T13:59:35.215+0000] {logging_mixin.py:188} INFO - best model scores are[-92.21877261089486, -36.14917777777795, -36.350376231482684]
+[2025-01-23T13:59:35.217+0000] {logging_mixin.py:188} INFO - best model isLinearRegression()
+[2025-01-23T13:59:35.238+0000] {python.py:201} INFO - Done. Returned value was: None
+[2025-01-23T13:59:35.256+0000] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=task45_train_models_v2, task_id=task5_selectBestModel, execution_date=20250123T135912, start_date=20250123T135934, end_date=20250123T135935
+[2025-01-23T13:59:35.338+0000] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-01-23T13:59:35.387+0000] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check
